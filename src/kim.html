@@ -1,0 +1,43 @@
+<!dpctype html>
+    <html lang="en">
+
+    <head>
+
+        <title>YOUCODE OBJECTIFS</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #map {
+                height: 500px;
+                width: 100px%;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="map"> </div>
+        <script>
+            function initMap() {
+                var location = { lat: -25.363, lng: 131.044};
+                   
+                   
+               
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 4,
+                    center: location
+                });
+            }
+
+        </script>
+
+        <script async defer src="https:/maps.googleapis.com/maps/api/js?key=AIzaSyCwD9wgyV4L_NkIraLPSSy_dE3StVpMszo&callback=initmap"></script>
+    </body>
+
+
+    </html>
